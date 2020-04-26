@@ -1,0 +1,389 @@
+/*BASE*/
+*{
+    box-sizing: border-box;/*rompe el mdelo caja para que no haya barra de desplazamiento
+                            inferior*/
+}
+
+body{
+    background-color:#F2F2F2;
+}
+a {
+    font-family: 'Sulphur Point', sans-serif;
+    text-decoration-line: none;
+    font-size: 20px;
+    color: #664959;
+    }
+    
+ul  {
+    list-style: none;
+    margin-top: 75px;
+    }
+ul li{
+    display:inline-block;
+    margin-right: 50px;
+    border-bottom: solid 2.5px transparent;
+    cursor: pointer;
+    transition: border 400ms linear; 
+    }
+ ul li:hover{
+        color:#8C3063;
+        border-color: #D9A3C0;       
+    }
+p,
+label{
+        color:#434b4d;
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 18px;  
+    }
+p{
+    padding: 0px 30px 30px 30px;
+}
+footer p{
+        color:#F2F2F2;
+        font-weight: bold;
+        margin-top:25px;
+        }
+
+h2{
+    font-family: 'Asul', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #8C3063;
+    /*font-variant: small-caps;*/
+} 
+
+h3{
+    font-size: 19px;
+    color:#8C3063;
+    font-family: 'Sulphur Point', sans-serif;  
+    }
+    
+input,
+label,
+select,
+textarea {
+    width:100%;
+}
+/*HELPERS*/
+
+/*****************************************************************************************************/
+
+.header{
+    height: 100vh;
+    background: #F2F2F2 url("../images/foto1.jpg") no-repeat 50% 50% fixed;
+    background-size:cover;
+}
+
+.caja-violeta{
+    background: #E0CDE8; 
+    height: auto;
+    padding-bottom: 30px;
+}
+.container-blanco{
+    background-color: white;
+}
+.txt-center{
+text-align: center;
+}
+.sombra-caja{
+box-shadow: 2px 5px 12px 1px;
+border-radius: 20px 25px 20px 25px;
+}
+
+.piscina,
+.spa,
+.restaurant,
+.salon{
+    position: relative;
+    float: left;
+    background-color:white;
+    height: 80%;
+    width: 23%;
+    margin-right: 8px;
+    margin-left: 10px;
+    text-align: center;
+    /*box-shadow:3px 5px 15px -1px;*/
+    border-radius: 20px 25px 20px 25px;
+}
+.individual,
+.doble,
+.luxe{
+    position: relative;
+    float: left;
+    background-color:white;
+    height: 80%;
+    width: 31%;
+    margin-right: 8px;
+    margin-left: 15px;
+    text-align: center;
+    /*box-shadow:3px 5px 15px -1px;*/
+    border-radius: 20px 25px 20px 25px;
+}
+.info{
+    background-color:white;
+    width: 30%;
+    text-align: center;
+   margin-left:40px; 
+   margin-top: 15px; 
+}
+.ubicacion{
+    background-color:white;
+    width: 57%;
+   margin-left:40px; 
+   margin-top: 15px; 
+}
+.img-mapa{
+    width: 90%;
+    margin-bottom: 10px;
+}
+.sombra-img{
+box-shadow:6px 6px 15px -1px;
+border-radius:15px 15px 15px 15px;
+}
+.margin-caja{
+margin: 15px 15px 0px 15px;
+}
+.padding-caja{
+padding-left: 15px;
+}
+.img-seccion{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    /*border: 1px solid #333;*/
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.btn-mobile{
+    position: absolute;
+    top:50px;
+    font-size: 45px;
+    left: 0;
+    display:none;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom{
+    width: 100%;
+    position: fixed;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+.navbar-fixed-top{
+    top:0;
+}
+.navbar-fixed-bottom{
+    bottom:0;
+}
+.bordes{
+    border-radius: 20px 25px 20px 25px;
+}
+.reservas{
+    height: 45vh;   
+    background: #F2F2F2 url("../images/foto3.jpg") no-repeat 50% 50% fixed;
+    background-size:cover;
+    font-weight: bold;
+}
+.margin-top-btn{
+    margin-top: 25px;
+}
+.margin-top{
+margin-top: 0px;
+}
+.margin-left-right{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.modal_mask{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0, 0,.3);
+    visibility: hidden;
+    z-index:99;
+}
+.modal_mask:target{
+    visibility: visible;
+}
+input,
+select{
+    height:30px;
+}
+
+.center-block{
+    display: inline-block;
+    margin-left:auto;
+    margin-right: auto;
+}
+/*LAYOUT*/
+
+/*grid Systems*/
+.container{
+    width: 1200px;
+    height: auto;
+    padding-left:15px;
+    padding-right:15px;
+    margin:0px auto;
+    max-width: 100%;   
+}
+.container-max{
+    width: 100%;
+    height:auto;
+    max-width:100%;	
+    vertical-align: middle;
+}
+
+.row{
+    margin-right:-15px;
+    margin-left:-15px;
+    
+
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+    position: relative;
+    float: left;
+    min-height:1px;/*para que nunca colapsen (alto min)*/
+    padding-left:15px;
+    padding-right:15px;
+}
+.col-12 {
+	width: 100%;
+}
+.col-11 {
+	width: 91.66666667%;
+}
+.col-10 {
+	width: 83.33333333%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-8 {
+	width: 66.6666666%;
+}
+.col-7 {
+	width: 58.33333333%;
+}
+.col-6 {
+	width: 50%;
+}  
+.col-5 {
+	width: 41.66666667%;
+}
+.col-4 {
+	width: 33.33333333%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-2 {
+	width: 16.66666667%;
+}
+.col-1 {
+	width: 8.33333333%;
+}
+/* Main structures */
+header{
+width: 100%;
+position: relative;
+float: left;
+}
+nav{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color:white;
+}
+section{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+aside{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    
+}
+footer{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 70%;
+    margin-top: 15px;
+    bottom: 0;
+    clear: both;/*footer nunca suba*/
+    background: #636363;
+}
+
+/**************************************************************************************************/
+/*COMPONENTS*/
+.btn {
+    height: 40px;
+   /*display:block;*/
+    padding: .37rem .75rem;
+    margin-bottom: 15px;
+    box-shadow:3px 5px 15px -1px;
+    text-transform: uppercase;
+    font-weight: 800;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #333;  
+  }
+  .btn-1{
+    width:80%;
+  }
+  .btn-enviar{
+    width:100%;
+  }
+    .btn-danger {
+      color: #664959;
+      background-color:#D9A3C0;
+      border-color:#D9A3C0;
+      font-weight: 800;
+    }
+    .btn-danger:hover {
+      color: #fff;
+      background-color: #8C3063;
+      border-color: #8C3063;
+    }
+/*PAGES/SECTIOS*/
+.content{
+    width: 500px;
+    margin: 200px auto;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Proceso non-mobile first 
+=============================== */
+
+@media screen and (max-width:1200px) {
+	
+	section{
+		background-color:brown;
+	}
+}
+

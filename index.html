@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Declarar la ventana gráfica 
+	==================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-sclable=no">
+	<!-- meta:vp -->
+
+	<title>Hotel Meridian</title>	
+	
+	<!-- Le hablamos a IE 
+	==================================== -->	
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<!-- Normalize -->	
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- Estilos propios-->
+	<link rel="stylesheet" href="css/style.css?ver=1.0">
+
+	<link rel="stylesheet" media="screen and (min-width:550px)" href="css/over500.css">
+
+	<!-- Responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!--LLamo a las fuentes externas Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Asul|Sulphur+Point:400,700&display=swap" rel="stylesheet">
+    
+    <!--favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+
+<!-- CUIDADO: Respond.js no funciona si vemos la página de manera local -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    
+    
+    
+</head>
+<body>
+    
+    <div id="top"></div>
+    <!--Logo-->   
+    <div class="container">
+		<div class="row">
+			<div class="col-12">
+                <nav class="navbar-fixed-top">
+                        <a href="#top" >
+                            <img src="images/logo.jpg" class="logo-nav" width="20%" alt="Hotel Meridian" >
+                            <!--Menu Telefono-->
+                            <a href="#" class="btn-mobile">
+                               <span class="menu-mobile">=</span> 
+                            </a>
+                    <!-- Menu de navegacion-->
+                        <ul class="float-right">
+                            <li><a href="#reservas">Reservas</a></li>
+                            <li><a href="#nuestro">Nuestro Hotel</a></li>
+                            <li><a href="#habitaciones">Habitaciones</a></li>
+                            <li><a href="#servicios">Servicios y Amenities</a></li>
+                            <li><a href="#ubicacion">Ubicacion</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                      </a>
+                    
+                 </nav>
+            </div>
+        </div>
+    </div>
+    
+                <header class="header">
+        <!--<img src="images/foto1.jpg" alt="Montaña Nevada">
+        <img src="images/foto2.jpg" alt="Contraste de Montañas"> 
+        <img src="images/foto3.jpg" alt="Entrada de Habitacion">
+        <img src="images/foto4.jpg" alt="Lunch">-->
+                </header>         
+<!--aca empieza main -->
+ <!--<hr>-->
+ <main>
+        <!--seccion de Reservas-->   
+     <section id="reservas" class=" margin-top reservas">
+         <h2>Reservas</h2>
+                <form action="procesar-formulario.php" class="form-consultas margin-top" method="POST">
+                    <div class="container">
+                           <div class="row">
+                                <div class="col-6">
+                                    <label for="check-in" >Llegada</label>
+                                    <input type="date" id="check-in"> 
+                                </div>
+                                <div class="col-6">      
+                                    <label for="check-out">Salida</label>
+                                    <input type="date" name="check-out" id="check-out">   
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="selechabitacion" >Tipo de Habitacion</label>
+                                        <select name="selechabitacion" id="selechabitacion">
+                                             <option value="individual" selected>Individual</option>
+                                             <option value="doble">Doble</option>
+                                             <option value="luxe">De Luxe</option>
+                                         </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="adultos">Adultos</label>
+                                        <select name="adultos" id="adultos">
+                                            <option value="uno" selected>1</option>
+                                            <option value="dos">2</option>
+                                            <option value="tres">3</option>
+                                            <option value="cuatro">4</option> 
+                                            <option value="cinco">5</option>
+                                        </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="niños">Niños</label>
+                                       <select name="niños" id="niños">
+                                            <option value="uno" selected>1</option>
+                                            <option value="dos">2</option>
+                                            <option value="tres">3</option>
+                                            <option value="cuatro">4</option>
+                                      </select>  
+                                </div>
+                                      <div class="col-12"> 
+                                        <input type="submit" class="margin-top-btn btn btn-enviar btn-danger" value="Enviar"> 
+                                     </div>  
+                                
+                           </div>     
+                    </form>
+             </section>       
+        
+        <!--Nuestro Hotel-->
+        <div class="container">
+            <div class="row">
+               <div class="col-12">
+                <section id="nuestro" class="nuestro sombra-caja container-blanco">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Nuestro Hotel</h2>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <article class="nuestro-hotel">
+                                    <p class="txt-center">Con un marcado estilo vanguardista se impone con nuestro edificio de 7 pisos de altura situado en pleno centro de la ciudad de Mendoza, fácilmente accesible por las principales rutas nacionales y provinciales. 
+                                    Cuenta con 15 habitaciones y 5 suites espaciosas, elegantes y cómodas, salón para convenciones; wifi, estacionamiento, spa y un exclusivo restaurante con desayuno buffet y especializados en sabores locales e internacionales.
+                                    Este hotel en Mendoza, capital vinícola mundialmente reconocida, es ideal para los viajeros de 
+                                    negocios o placer. Está todo pensado para que los visitantes puedan disfrutar con todos sus sentidos, vivan una experiencia única, disfrutando del marco inigualable de la Cordillera de Los Andes.
+                                    </p>                                    
+                                </article>
+                            </div>
+                        </div>
+                 </section>
+               </div>
+            </div>
+        </div>
+        <!--<hr>-->
+        <!--Habitaciones-->
+    <div class="container">
+            <div class="row">
+               <div class="col-12">
+                <section id="habitaciones" class="habitaciones sombra-caja caja-violeta">
+                    <div class="container">
+                        <h2>Nuestras Habitaciones</h2>
+                            <div class="row">
+                                <div class="col-12">
+                                    <article id="individual" class="individual txt-center">
+                                        <img class=" img-seccion sombra-img" src="images/roomindividual.jpg" alt="Habitacion Individual">                                                
+                                        <h3 class="txt-center">Individual</h3>
+                                        <a href="#modal-individual" class="btn btn-1 btn-danger bordes btn-large center-block">ver [+]</a> 
+                                        <div id="modal-individual" class="modal_mask">
+                                        <div class="content">
+                                            <a href="#/" class="cerrar" >X</a>
+                                                <p class="txt-center">Dispone de camas queen, aire acondicionado y calefacción, baño privado con bañera y ducha, secador de pelo, caja fuerte, escritorio, minibar, TV de pantalla plana con canales por cable, teléfono, radio, servicio de despertador/Reloj despertador.Wifi gratis en todas las habitaciones.
+                                                </p>  
+                                            </div>  
+                                              
+                                    </article>
+                                <!--</div>
+                                <div class="col-4"> -->
+                                    <article id="doble" class="doble  txt-center ">
+                                        <img class=" img-seccion sombra-img " src="images/roomdoble.jpg" alt="Habitacion Doble">
+                                        <h3 class="txt-center">Doble</h3>
+                                        <a href="#modal-doble"  class="btn btn-1 btn-danger bordes btn-large center-block">ver [+]</a> 
+                                        <div id="modal-doble" class="modal_mask">
+                                            <div class="content">
+                                                <a href="#/" class="cerrar" >X</a>
+                                                <p class="txt-center">Dispone de una cama doble o King de 1,80 x 2,00 m, aire acondicionado y calefacción, baño privado con bañera y ducha, secador de pelo, caja fuerte, minibar, TV de pantalla plana con canales por cable, teléfono, radio, servicio de despertador/Reloj despertador. Wifi gratis en todas las habitaciones.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                <!--</div>
+                                <div class="col-4">-->
+                                    <article id="luxe" class="luxe  txt-center">
+                                        <img class=" img-seccion sombra-img" src="images/suite.jpg" alt="Habitacion Suite">
+                                        <h3 class="txt-center">De Luxe</h3>
+                                        <a href="#modal-luxe"  class="btn btn-1 btn-danger bordes btn-large center-block">ver [+]</a> 
+                                        <div id="modal-luxe" class="modal_mask">
+                                            <div class="content">
+                                                <a href="#/" class="cerrar" >X</a>
+                                                <p class="txt-center">Habitación muy amplia, dispone de una cama doble extragrande de 1,80 x 2,00 m, aire acondicionado y calefacción, baño privado con bañera de hidromasaje y ducha, secador de pelo, caja fuerte, zona de estar independiente, escritorio, TV de pantalla plana con canales por cable, teléfono, radio, servicio de despertador/Reloj despertador, sofá, mesa con sillas, cafetera, minibar, Wifi gratis en todas las habitaciones.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </div>
+        
+        <!--Servicios -->
+    <div class="container">
+         <div class="row">
+             <div class="col-12">
+                <section id="servicios" class="servicios sombra-caja caja-violeta">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                             <h2>Servicios y Amenities</h2>
+                            </div>  
+                        </div>
+                        <div class="row">
+                                <div class="col-12">
+                                    <article id="restaurant" class="restaurant  txt-center  ">
+                                        <img class=" img-seccion sombra-img" src="images/restaurant.jpg" alt="Restaurant">
+                                        <h3 >Restaurant</h3>
+                                        <a href="#modal-resto"  class="btn btn-1 btn-danger bordes  center-block">ver [+]</a> 
+                                        <div id="modal-resto" class="modal_mask">
+                                            <div class="content">
+                                                <a href="#/" class="cerrar" >X</a>
+                                                <p class="txt-center">Nuestro restaurant y cocina regional típica argentina, destacada por técnicas gastronómicas como horno de barro, asador a la llama y parrilla logran una perfecta armonía junto a la utilización de productos e ingredientes locales de estación. Las especialidades del Chef están basadas en una amplia gama de carnes. Además, ofrecemos variedades de pastas secas o rellenas y pescados. Los postres se acoplan de manera inmejorable a este concepto culinario.
+                                                El toque final se lo da sin duda una excelente pluralidad de maridajes posibles gracias a una extensa carta de vinos minuciosamente seleccionados.  
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                <!--</div>
+                                <div class="col-3">-->
+                                    <article id="piscina" class="piscina txt-center">
+                                    <img class=" img-seccion sombra-img"src="images/piscina.jpg" alt="Piscina">
+                                    <h3 >Piscina</h3>
+                                    <a href="#modal-piscina"  class="btn btn-1 btn-danger bordes  center-block">ver [+]</a>
+                                    <div id="modal-piscina" class="modal_mask">
+                                        <div class="content">
+                                            <a href="#/" class="cerrar" >X</a> 
+                                             <p class="txt-center">Nuestro exclusivo Spa y sus distintos programas priorizan tanto el cuidado del cuerpo como el descanso.</p>
+                                        </div>
+                                    </div>
+                                    </article>
+                                <!--</div>
+                                <div class="col-3">-->
+                                <article id="spa" class="spa caja-blanca txt-center">
+                                    <img class=" img-seccion sombra-img"src="images/spa.jpg" alt="Spa">
+                                    <h3 class="txt-center">Spa</h3>
+                                    <a href="#modal-spa"  class="btn btn-1 btn-danger bordes center-block">ver [+]</a> 
+                                    <div id="modal-spa" class="modal_mask">
+                                        <div class="content">
+                                            <a href="#/" class="cerrar" >X</a>
+                                            <p class="txt-center">Para disfrutar en cualquier momento del día contamos     con piscina cubierta temperada.
+                                            Descripción salón de eventos y convenciones
+                                            Nuestro equipo le ofrece un servicio impecable de principio a fin, además de los conocimientos
+                                            técnicos que hacen que todas las reuniones o eventos sean un éxito.    
+                                             </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!--</div>
+                                <div class="col-3">-->
+                                <article id="salon" class="salon caja-blanca  txt-center">
+                                    <img class=" img-seccion sombra-img txt-center"src="images/salonconferencias_1.jpg" alt="Salon">
+                                    <h3 >Salon de Conferencias</h3>
+                                    <a href="#modal-salon"  class="btn btn-1 btn-danger bordes center-block">ver [+]</a> 
+                                    <div id="modal-salon" class="modal_mask">
+                                        <div class="content">
+                                            <a href="#/" class="cerrar" >X</a>
+                                            <p class="txt-center">Sus negocios, su reunión de capacitación, desayuno de trabajo o conferencia de prensa serán un éxito inigualable en Hotel América.    
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article> 
+                                </div>
+                        </div>
+                    </div>
+               </section>
+            </div>
+        </div>
+    </div>
+
+        <!--Salon y mapa-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                 <section id="ubicacion" class="otros sombra-caja caja-violeta">
+                            <div class="row margin-top-btn">
+                                <div class="col-12">
+                                    <section class=" info  sombra-caja ">
+                                        <div class="row">
+                                            <div class="col-12"> 
+                                            <img src="images/logo.jpg" width="70%" class="margin-caja" alt="Hotel Meridian" >
+                                            <p><strong>Contacto</strong><br>Boulevard Pérez Araóz s/nro.<br>  Guaymallén <br> Provincia de Mendoza <br>(5519) <br><strong>Contacto</strong><br> +54 261 4395678/79/80
+                                            </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                <!--</div>
+                                <div class="col-8">-->
+                                    <section class=" ubicacion  sombra-caja " >
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div id="mapa" class="mapa txt-center margin-caja">
+                                                        <iframe class="img-mapa sombra-img "src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.0492966093584!2d-68.86413768525215!3d-33.002475782045785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ad9c7416687%3A0x74a9b62f1b3ad834!2zQXLDoW96LCBMdWrDoW4gZGUgQ3V5bywgTWVuZG96YQ!5e0!3m2!1ses!2sar!4v1573180625226!5m2!1ses!2sar" width="550" height="318" frameborder="0" style="border:0;" allowfullscreen="">
+                                                        </iframe>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                   </section>
+                                </div> 
+                            </div>
+                     </section>
+                </div>
+           </div>
+    </div>
+        
+        <!--Formulario de Contacto-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <section id="contacto" class="contacto sombra-caja caja-violeta">
+                            <h2>Formulario de Contacto</h2>
+                                <form action="procesar-formulario.php" class="margin-left-right" method="POST">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="nombre" >Nombre</label> 
+                                                <input type="text" name="nombre" id="nombre">                         
+                                                <label for="apellido" >Apellido</label>
+                                                <input type="text" name="apellido" id="apellido">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="pais" >Pais</label>
+                                                <input type="text" name="pais" id="pais">
+                                                <label for="email" >Email</label>
+                                                <input type="email"  name="email" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                             <div class="col-12">
+                                                <label for="comentario" >Comentario de Consulta</label>
+                                                <textarea id="comentario" name="mensaje" cols="30" rows="10">Tu mensaje...</textarea>
+                                                <input type="submit"  class=" margin-top-btn btn btn-enviar btn-danger" value="Enviar">
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </form>
+                    </section> 
+                     <aside class="txt-center">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-3">
+                                    <h3>REDES SOCIALES</h3>
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/facebook.png" alt="logoFace">
+                                </div>
+                                <div class="col-3">
+                                    <img src="images/Instagram.png" alt="logoInstagram">
+                                </div>
+                                <div class="col-3">
+                                     <img src="images/media.png" alt="logoWhatsapp">
+                                </div>
+                            </div>
+                        </div> 
+                    </aside> 
+                    </div>
+                </div>
+            </div>
+    </main>
+                
+                <div class="container-max">
+                    <div class="fila">
+                        <div class="colum-12">
+                            <footer id="footer" class="">
+                                <p class="txt-center ">Boulevard Pérez Araóz s/nro. – Guaymallén – Provincia de Mendoza - (5519)
+                                Tel.: +54 261 4395678/79/80
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Proceso non-mobile first 
+=============================== */
+
+@media screen and (max-width:1285px) {
+	.container {
+		width:1280px;
+	}
+	.logo-nav{
+		display:block;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+}
+@media screen and (max-width:1062px) {
+	.container {
+		width:1060px;
+	}
+	
+	article.individual,
+	article.doble,
+	article.luxe{
+		width: 47%;
+	}
+	article.luxe{
+		margin-left: 230px;
+		margin-top: 15px;
+	}
+	
+	h3{
+		font-size: 18px;
+	}
+
+}
+
+@media screen and (max-width:980px) {
+	.container {
+		width:975px;
+	}
+	.logo-nav{
+		width: 35%;
+	}
+	
+	.btn-mobile{
+		display: block;
+	}
+	.menu-mobile{
+		display: block;
+	}
+	
+	.navbar-fixed-top ul{
+		margin: 0px auto;
+		padding: 0px;
+		display: none;	
+	}
+	.navbar-fixed-top li{
+		display: block;
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+	.btn-mobile:hover ~ ul,
+	ul:hover{
+		display: block;
+	}
+	 article.piscina,
+	 article.restaurant,
+	 article.spa,
+	 article.salon
+	{
+		width:46%;
+		margin-top: 15px;
+	}
+	
+}
+
+@media screen and (max-width:868px) {
+	.container {
+		width:750px;
+	}
+	
+	article.individual,
+	article.doble,
+	article.luxe{
+		width: 45%;
+		
+	}
+	article.luxe{
+		margin-left: 200px;
+		margin-top: 15px;
+	}
+	
+}
+@media screen and (max-width:670px) {
+	.container {
+		width:650px;
+		padding-left:0;
+		padding-right:0;
+	}
+	
+	 article.piscina,
+	 article.restaurant,
+	 article.spa,
+	 article.salon{
+		width:90%;
+		height: auto;	
+		margin-bottom:15px;
+		margin-left: 20px;
+	}
+	article.individual,
+	article.doble,
+	article.luxe{
+		width: 90%;
+		margin-bottom: 15px;
+	}
+	article.luxe{
+		margin-left: 15px;
+	}
+	.info,
+	.ubicacion{
+		width: 90%;
+		margin-right: 20px;
+		margin-left: 25px;
+	}
+		
+	}
+	
